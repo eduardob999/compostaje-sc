@@ -1,9 +1,12 @@
 {
+  "homepage":"https://eduardob999.github.io/compostaje-sc",
   "name": "material-tailwind-kit-react",
   "private": true,
   "version": "2.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -21,6 +24,7 @@
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
