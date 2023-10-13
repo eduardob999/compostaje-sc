@@ -2,29 +2,31 @@ import {
   StarIcon,
   ArrowPathIcon,
   FingerPrintIcon,
+  QuestionMarkCircleIcon,
+  BuildingStorefrontIcon,
 } from "@heroicons/react/24/solid";
 
 export const featuresData = [
   {
     color: "blue",
-    title: "Awarded Agency",
-    icon: StarIcon,
+    title: "Compostaje 101",
+    icon: QuestionMarkCircleIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "¿Eres nuevo en el mundo del compostaje? En esta sección, te guiamos a través de los conceptos básicos del compostaje.",
   },
   {
     color: "red",
-    title: "Free Revisions",
-    icon: ArrowPathIcon,
+    title: "Compostaje en la Ciudad",
+    icon: BuildingStorefrontIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      " ¿Vives en la ciudad y piensas que el compostaje es imposible? ¡Piensa de nuevo! Te mostramos cómo hacerlo de manera efectiva incluso en espacios pequeños.",
   },
   {
     color: "teal",
-    title: "Verified Company",
-    icon: FingerPrintIcon,
+    title: "Beneficios del Compostaje",
+    icon: StarIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "El compostaje no solo es bueno para el medio ambiente, sino que también tiene beneficios sorprendentes para tu jardín y tu billetera.",
   },
 ];
 

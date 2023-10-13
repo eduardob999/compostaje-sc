@@ -75,7 +75,7 @@ export function Navbar({ brandName, routes, action }) {
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
+              Contacto
             </Button>
           </a>
           {React.cloneElement(action, {
@@ -108,7 +108,7 @@ export function Navbar({ brandName, routes, action }) {
             className="mb-2 block"
           >
             <Button variant="text" size="sm" fullWidth>
-              pro version
+              Contacto
             </Button>
           </a>
           {React.cloneElement(action, {
@@ -121,7 +121,7 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "Serviicio Comunitario - El copmpostaje - UCV",
+  brandName: "El compostaje - SC - UCV",
   action: (
     <a
       href="https://www.creative-tim.com/product/material-tailwind-kit-react"

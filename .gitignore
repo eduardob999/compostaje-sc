@@ -26,3 +26,6 @@ dist-ssr
 yarn.lock
 pnpm-lock.yaml
 package-lock.json
+
+# dev
+local/

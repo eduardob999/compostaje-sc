@@ -1,5 +1,5 @@
 {
-  "homepage":"https://eduardob999.github.io/compostaje-sc",
+  "homepage": "https://eduardob999.github.io/compostaje-sc",
   "name": "material-tailwind-kit-react",
   "private": true,
   "version": "2.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -17,7 +17,8 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2"
+    "react-router-dom": "^6.4.2",
+    "replicate": "^0.20.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
