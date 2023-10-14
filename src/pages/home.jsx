@@ -28,10 +28,13 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                ¡Bienvenidos a nuestro mundo verde!.
+                ¡Bienvenidos a nuestro mundo verde!
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                En nuestro sitio web, te sumergirás en el fascinante universo del compostaje. Descubre cómo transformar tus desechos orgánicos en oro negro para tu jardín. Explora consejos prácticos, guías paso a paso y consejos de expertos para convertir tus residuos en nutrientes naturales para la tierra.
+                En nuestro sitio web, te sumergirás en el fascinante universo del compostaje. 
+                Descubre cómo transformar tus desechos orgánicos en oro negro para tu jardín. 
+                Explora consejos prácticos, guías paso a paso y consejos de expertos para convertir 
+                tus residuos en nutrientes naturales para la tierra.
               </Typography>
             </div>
           </div>
@@ -62,26 +65,28 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                ¡Únete al equipo, nos encantaría trabajar contigo!
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                ¿Eres un amante de la naturaleza y un defensor de un planeta más verde? 
+                ¿Te apasiona la idea de reducir los residuos y enriquecer la tierra de manera 
+                sostenible? ¡Entonces, tenemos una oportunidad para ti!
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                En nuestro equipo de compostaje, no solo estamos creando compost, 
+                estamos cultivando un futuro más saludable y sostenible para todos. 
+                Si te unes a nosotros, formarás parte de un movimiento dedicado a convertir 
+                desechos orgánicos en recursos valiosos. Imagina contribuir a un planeta más 
+                limpio, a jardines más exuberantes y a comunidades más fuertes.
               </Typography>
-              <Button variant="outlined">read more</Button>
+              <Button variant="outlined">Leer más</Button>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
                 <CardHeader className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/teamwork.jpeg"
+                    src="/img/pic-1.jpg"
                     className="h-full w-full"
                   />
                 </CardHeader>
@@ -91,12 +96,11 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Top Notch Services
+                    Servicio Comunitario
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    ¿Estás buscando un proyecto para hacer tu servicio comunitario? 
+                    Comunícate con nosotros.
                   </Typography>
                 </CardBody>
               </Card>
@@ -106,10 +110,8 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle heading="Nuestro equipo">
+            Estudiantes, profesores y colaboradores de la Universidad Central de Venezuela.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -164,13 +166,17 @@ export function Home() {
           <PageTitle heading="Want to work with us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>
-          <form className="mx-auto mt-12 max-w-3xl text-center">
+          <form
+            className="mx-auto mt-12 max-w-3xl text-center"
+            action="https://formspree.io/f/mvojdqzd"
+            method="POST"
+          >
             <div className="mb-8 flex gap-8">
-              <Input variant="standard" size="lg" label="Full Name" />
-              <Input variant="standard" size="lg" label="Email Address" />
+              <Input variant="standard" size="lg" label="Full Name" name="name" />
+              <Input variant="standard" size="lg" label="Email Address" name="_replyto" />
             </div>
-            <Textarea variant="standard" size="lg" label="Message" rows={8} />
-            <Button variant="gradient" size="lg" className="mt-8">
+            <Textarea variant="standard" size="lg" label="Message" rows={8} name="message" />
+            <Button variant="gradient" size="lg" className="mt-8" type="submit">
               Send Message
             </Button>
           </form>
