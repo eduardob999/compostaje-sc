@@ -121,10 +121,10 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "El compostaje - SC - UCV",
+  brandName: "El Compostaje - SC - UCV",
   action: (
     <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
+      href="/compostaje-sc/home"
       target="_blank"
     >
     </a>

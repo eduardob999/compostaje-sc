@@ -6,5 +6,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },
-  base:'https://eduardob999.github.io/'
+  base:'https://eduardob999.github.io/compostaje-sc/home'
 });

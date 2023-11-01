@@ -28,13 +28,14 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                ¡Bienvenidos a nuestro mundo verde!
+                ¡Bienvenidos a nuestro <br />
+                mundo verde!
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
                 En nuestro sitio web, te sumergirás en el fascinante universo del compostaje. 
                 Descubre cómo transformar tus desechos orgánicos en oro negro para tu jardín. 
                 Explora consejos prácticos, guías paso a paso y consejos de expertos para convertir 
-                tus residuos en nutrientes naturales para la tierra.
+                tus residuos en nutrientes naturales para la tierraa.
               </Typography>
             </div>
           </div>
@@ -83,7 +84,7 @@ export function Home() {
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
-                <CardHeader className="relative h-56">
+                <CardHeader className="relative h-auto">
                   <img
                     alt="Card Image"
                     src="/img/pic-1.jpg"
@@ -108,63 +109,10 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
-        <div className="container mx-auto">
-          <PageTitle heading="Nuestro equipo">
-            Estudiantes, profesores y colaboradores de la Universidad Central de Venezuela.
-          </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
-            {teamData.map(({ img, name, position, socials }) => (
-              <TeamCard
-                key={name}
-                img={img}
-                name={name}
-                position={position}
-                socials={
-                  <div className="flex items-center gap-2">
-                    {socials.map(({ color, name }) => (
-                      <IconButton key={name} color={color} variant="text">
-                        <i className={`fa-brands text-lg fa-${name}`} />
-                      </IconButton>
-                    ))}
-                  </div>
-                }
-              />
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="relative bg-blue-gray-50/50 py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
-          </PageTitle>
-          <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
-              <Card
-                key={title}
-                color="transparent"
-                shadow={false}
-                className="text-center text-blue-gray-900"
-              >
-                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
-                  {React.createElement(icon, {
-                    className: "w-5 h-5",
-                  })}
-                </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                  {title}
-                </Typography>
-                <Typography className="font-normal text-blue-gray-500">
-                  {description}
-                </Typography>
-              </Card>
-            ))}
-          </div>
-          <PageTitle heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+          <PageTitle heading="¿Quieres trabajar con nosotros?">
+            Completa este formulario y te responderemos en 24 horas.
           </PageTitle>
           <form
             className="mx-auto mt-12 max-w-3xl text-center"
@@ -172,12 +120,12 @@ export function Home() {
             method="POST"
           >
             <div className="mb-8 flex gap-8">
-              <Input variant="standard" size="lg" label="Full Name" name="name" />
-              <Input variant="standard" size="lg" label="Email Address" name="_replyto" />
+              <Input variant="standard" size="lg" label="Nombre Completo" name="name" />
+              <Input variant="standard" size="lg" label="Dirección de Correo Electrónico" name="_replyto" />
             </div>
-            <Textarea variant="standard" size="lg" label="Message" rows={8} name="message" />
+            <Textarea variant="standard" size="lg" label="Mensaje" rows={8} name="message" />
             <Button variant="gradient" size="lg" className="mt-8" type="submit">
-              Send Message
+              Enviar Mensaje
             </Button>
           </form>
         </div>
