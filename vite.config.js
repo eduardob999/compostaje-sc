@@ -8,3 +8,5 @@ export default defineConfig({
   },
   base:'https://eduardob999.github.io/compostaje-sc/home'
 });
+
+//new
