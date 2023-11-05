@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    img: "/img/team-1.jpg",
-    name: "Ryan Tompson",
-    position: "Web Developer",
+    img: "/img/vid-1.jpeg",
+    name: "¡Hagamos compost!",
+    position: "Introduccion",
     socials: [
       {
         color: "light-blue",
@@ -19,9 +19,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-2.jpg",
-    name: "Romina Hadid",
-    position: "Marketing Specialist",
+    img: "/img/vid-2.jpeg",
+    name: "¿Compost de pizza?",
+    position: "Materiales para compost",
     socials: [
       {
         color: "light-blue",
@@ -38,9 +38,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-3.jpg",
-    name: "Alexa Smith",
-    position: "UI/UX Designer",
+    img: "/img/vid-3.jpeg",
+    name: "¿Cómo hacer compost?",
+    position: "Guia de inicio rapido",
     socials: [
       {
         color: "light-blue",
@@ -57,9 +57,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-4.png",
-    name: "Jenna Kardi",
-    position: "Founder and CEO",
+    img: "/img/vid-4.jpeg",
+    name: "¿Problemas?",
+    position: "Te ayudamos",
     socials: [
       {
         color: "light-blue",

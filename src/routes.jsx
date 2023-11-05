@@ -18,8 +18,8 @@ export const routes = [
   {
     icon: QuestionMarkCircleIcon,
     name: "Compostaje 101",
-    path: "/compostaje-sc/compostaje101",
-    element: <Compostaje101 />,
+    path: "/compostaje-sc/compostaje-101",
+    element: <SignUp />,
   }
 ];
 

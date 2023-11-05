@@ -79,9 +79,9 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "Universidad Central de Venezuela",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "La casa que vence la sombra.",
   socials: [
     {
       color: "blue",
@@ -116,7 +116,7 @@ Footer.defaultProps = {
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Enlaces útiles",
       items: [
         { name: "About Us", path: "https://www.creative-tim.com/presentation" },
         { name: "Blog", path: "https://www.creative-tim.com/blog" },
@@ -131,7 +131,7 @@ Footer.defaultProps = {
       ],
     },
     {
-      name: "other resources",
+      name: "Otros recursos",
       items: [
         {
           name: "MIT License",
@@ -154,13 +154,13 @@ Footer.defaultProps = {
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
+      Copyright © {year + ' '}
       <a
         href="https://www.creative-tim.com?ref=mtk"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
-        Creative Tim
+        Eduardo Bogado
       </a>
       .
     </>
