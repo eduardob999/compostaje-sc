@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import {
   Card,
@@ -8,7 +9,6 @@ import {
 
 export function FeatureCard({ color, icon, title, description }) {
   return (
-    <a href="/compostaje-sc/compostaje-101">
       <Card className="rounded-2xl shadow-lg shadow-gray-500/10">
         <CardBody className="px-8 text-center">
           <IconButton
@@ -27,7 +27,6 @@ export function FeatureCard({ color, icon, title, description }) {
           </Typography>
         </CardBody>
       </Card>
-    </a>
   );
 }
 

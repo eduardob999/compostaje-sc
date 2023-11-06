@@ -70,12 +70,17 @@ export function Navbar({ brandName, routes, action }) {
         </Link>
         <div className="hidden lg:block">{navList}</div>
         <div className="hidden gap-2 lg:flex">
-          <Button variant="text" size="sm" color="white" fullWidth>
-            Contacto
-          </Button>
-          {React.cloneElement(action, {
-            className: "hidden lg:inline-block",
-          })}
+          <Link
+            to='https://leaizetucv.wordpress.com/'
+            target="blank"
+          >
+            <Button variant="text" size="sm" color="white" fullWidth>
+              Contacto
+            </Button>
+            {React.cloneElement(action, {
+              className: "hidden lg:inline-block",
+            })}
+          </Link>
         </div>
         <IconButton
           variant="text"
@@ -98,7 +103,7 @@ export function Navbar({ brandName, routes, action }) {
         <div className="container mx-auto">
           {navList}
           <a
-            href="https://www.material-tailwind.com/blocks/react?ref=mtkr"
+            href="https://leaizetucv.wordpress.com/"
             target="_blank"
             className="mb-2 block"
           >

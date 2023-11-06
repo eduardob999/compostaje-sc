@@ -23,7 +23,8 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
             <li key={name}>
               <Typography
                 as="a"
-                href=""
+                href={path}
+                target='blank'
                 variant="small"
                 className="py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500"
               >
@@ -38,13 +39,13 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
 }
 
 SimpleFooter.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "",
+  brandName: "Eduardo Bogado",
+  brandLink: "https://github.com/eduardob999",
   routes: [
-    { name: "Creative Tim", path: "" },
-    { name: "About Us", path: "" },
-    { name: "Blog", path: "" },
-    { name: "License", path: "" },
+    { name: "Eduardo Bogado", path: "https://github.com/eduardob999" },
+    { name: "LEAIZET", path: "https://leaizetucv.wordpress.com" },
+    { name: "UCV", path: "https://ucv.ve" },
+    { name: "Facultad de Ciencias", path: "http://www.ciens.ucv.ve/" },
   ],
 };
 

@@ -13,6 +13,7 @@ export const featuresData = [
     icon: QuestionMarkCircleIcon,
     description:
       "¿Eres nuevo en el mundo del compostaje? En esta sección, te guiamos a través de los conceptos básicos del compostaje.",
+    url: '/compostaje-sc/compostaje-101'
   },
   {
     color: "red",

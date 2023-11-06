@@ -18,7 +18,7 @@ import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData, videoData } from "@/data";
 import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
-export function Vid1() {
+export function Vid2() {
   const ref = useRef(null)
   const ref0 = useRef(null)
 
@@ -67,16 +67,16 @@ export function Vid1() {
                 color="white"
                 className="mb-6 font-black"
               >
-                ¡Hagamos compost!<br />
+                ¿Compost de pizza?<br />
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                I hope you enjoy it 🤗 I know my pronuntiation is not the best, 
-                so here you have all what I said in the chemical reactions.<br /><br />
+                Hola, chicos! espero que disfruten el vídeo 🥰 Tipos de materiales
+                para preparar el compost.<br /><br />
               </Typography>
               <Suspense fallback={<LoadingSpinner />}>
                 <div className="videoWrapper">
-                  <iframe 
-                    src="https://www.youtube.com/embed/T4diFCgNelI?si=0fPmwJNwbLEugWcR"></iframe>
+                  <iframe
+                    src="https://www.youtube.com/embed/FYURcqP5-a4?si=d1Y-9PGty9e4-qPl"></iframe>
                 </div>
               </Suspense>
             </motion.div>
@@ -92,4 +92,4 @@ export function Vid1() {
   );
 }
 
-export default Vid1;
+export default Vid2;

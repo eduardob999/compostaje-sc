@@ -1,6 +1,6 @@
 export const videoData = [
   {
-    img: "/img/team-1.jpg",
+    img: "https://i.imgur.com/M5TjRgc.jpeg",
     name: "Introducción",
     position: "Hagamos compost",
     socials: [
@@ -19,7 +19,7 @@ export const videoData = [
     ],
   },
   {
-    img: "/img/team-2.jpg",
+    img: "https://i.imgur.com/uPH6Lzo.jpeg",
     name: "Romina Hadid",
     position: "Marketing Specialist",
     socials: [
@@ -38,7 +38,7 @@ export const videoData = [
     ],
   },
   {
-    img: "/img/team-3.jpg",
+    img: "https://i.imgur.com/vgfi1vS.jpeg",
     name: "Alexa Smith",
     position: "UI/UX Designer",
     socials: [
@@ -57,7 +57,7 @@ export const videoData = [
     ],
   },
   {
-    img: "/img/team-4.png",
+    img: "https://i.imgur.com/ufePD8D.jpeg",
     name: "Jenna Kardi",
     position: "Founder and CEO",
     socials: [

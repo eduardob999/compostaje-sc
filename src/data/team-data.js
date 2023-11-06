@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "/img/vid-1.jpeg",
+    img: "https://i.imgur.com/M5TjRgc.jpeg",
     name: "¡Hagamos compost!",
     position: "Introduccion",
     socials: [
@@ -17,9 +17,10 @@ export const teamData = [
         name: "dribbble",
       },
     ],
+    url: "/compostaje-sc/compostaje-101/vid-1",
   },
   {
-    img: "/img/vid-2.jpeg",
+    img: "https://i.imgur.com/uPH6Lzo.jpeg",
     name: "¿Compost de pizza?",
     position: "Materiales para compost",
     socials: [
@@ -36,9 +37,10 @@ export const teamData = [
         name: "dribbble",
       },
     ],
+    url: "/compostaje-sc/compostaje-101/vid-2"
   },
   {
-    img: "/img/vid-3.jpeg",
+    img: "https://i.imgur.com/vgfi1vS.jpeg",
     name: "¿Cómo hacer compost?",
     position: "Guia de inicio rapido",
     socials: [
@@ -55,9 +57,10 @@ export const teamData = [
         name: "dribbble",
       },
     ],
+    url: "/compostaje-sc/compostaje-101/vid-3"
   },
   {
-    img: "/img/vid-4.jpeg",
+    img: "https://i.imgur.com/ufePD8D.jpeg",
     name: "¿Problemas?",
     position: "Te ayudamos",
     socials: [
@@ -74,6 +77,7 @@ export const teamData = [
         name: "dribbble",
       },
     ],
+    url: "/compostaje-sc/compostaje-101/vid-4"
   },
 ];
 

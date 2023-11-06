@@ -1,5 +1,6 @@
 import { SimpleFooter } from "@/widgets/layout";
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardBody,
@@ -41,7 +42,7 @@ export function SignUp() {
   return (
     <>
       <img
-        src="/img/background-3.jpg"
+        src="https://i.imgur.com/whkGJpw.jpeg"
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
@@ -49,7 +50,7 @@ export function SignUp() {
       <section className="h-screen px-10 pt-10 pb-40 overflow-y-auto">
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
-            <motion.div className="pt-40 ml-auto mr-auto w-full px-4 text-center lg:w-8/12"
+            <motion.div className="pt-32 ml-auto mr-auto w-full px-4 text-center lg:w-8/12"
               ref={ref}
               variants={{
                 hidden: { opacity: 0, x: 100 },
@@ -75,7 +76,7 @@ export function SignUp() {
             </motion.div>
           </div>
         </div>
-        <div className="container mx-auto">
+        <div className="container pb-12 mx-auto">
           <motion.div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4"
             ref={ref0}
             variants={{
@@ -87,29 +88,24 @@ export function SignUp() {
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
           >
-            {teamData.map(({ img, name, position, socials }) => (
-              <a href="/compostaje-sc/compostaje-101/vid-1">
+            {teamData.map(({ img, name, position, socials, url }) => (
+              <Link
+                to={url}
+              >
                 <TeamCard
                   key={name}
                   img={img}
                   name={name}
                   position={position}
-                  socials={
-                    <div className="flex items-center gap-2">
-                      {socials.map(({ color, name }) => (
-                        <IconButton key={name} color={color} variant="text">
-                          <i className={`fa-brands text-lg fa-${name}`} />
-                        </IconButton>
-                      ))}
-                    </div>
-                  }
                 />
-              </a>
+              </Link>
             ))}
           </motion.div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-b from-transparent to-black pointer-events-none" />
-        <div className="absolute top-0 left-0 w-full h-60 bg-gradient-to-t from-transparent to-black pointer-events-none" />
+        <div className="absolute bottom-36 left-0 w-full h-20 bg-gradient-to-b from-transparent to-black pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-full h-36 bg-black" />
+        <div className="absolute top-0 left-0 w-full h-24 bg-black" />
+        <div className="absolute top-24 left-0 w-full h-20 bg-gradient-to-t from-transparent to-black pointer-events-none" />
       </section>
       <div className="container absolute bottom-6 left-2/4 z-10 mx-auto -translate-x-2/4 text-white">
         <SimpleFooter />

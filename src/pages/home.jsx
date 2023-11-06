@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   CardBody,
@@ -113,16 +114,20 @@ export function Home() {
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
           >
-            {featuresData.map(({ color, title, icon, description }) => (
-              <FeatureCard
-                key={title}
-                color={color}
-                title={title}
-                icon={React.createElement(icon, {
-                  className: "w-5 h-5 text-white",
-                })}
-                description={description}
-              />
+            {featuresData.map(({ color, title, icon, description, url }) => (
+              <Link
+                to={url} // modify for multiple links
+              >
+                <FeatureCard
+                  key={title}
+                  color={color}
+                  title={title}
+                  icon={React.createElement(icon, {
+                    className: "w-5 h-5 text-white",
+                  })}
+                  description={description}
+                />
+              </Link>
             ))}
           </motion.div>
           <div className="mt-32 flex flex-wrap items-center">
@@ -159,7 +164,12 @@ export function Home() {
                 desechos orgánicos en recursos valiosos. Imagina contribuir a un planeta más
                 limpio, a jardines más exuberantes y a comunidades más fuertes.
               </Typography>
-              <Button variant="outlined">Leer más</Button>
+              <Link
+                to='http://www.ciens.ucv.ve/ciens/servicio-comunitario/'
+                target="blank"
+              >
+                <Button variant="outlined">Leer más</Button>
+              </Link>
             </motion.div>
             <motion.div
               className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0"
@@ -177,7 +187,7 @@ export function Home() {
                 <CardHeader className="relative h-auto">
                   <img
                     alt="Card Image"
-                    src="/img/pic-1.jpg"
+                    src="https://i.imgur.com/Ll7bm26.jpeg"
                     className="h-full w-full"
                   />
                 </CardHeader>
@@ -220,9 +230,13 @@ export function Home() {
             action="https://formspree.io/f/mvojdqzd"
             method="POST"
           >
-            <div className="mb-8 flex gap-8">
-              <Input variant="standard" size="lg" label="Nombre Completo" name="name" />
-              <Input variant="standard" size="lg" label="Dirección de Correo Electrónico" name="_replyto" />
+            <div className="mb-8 flex flex-col gap-4 md:flex-row md:gap-8">
+              <div className="md:w-1/2">
+                <Input variant="standard" size="lg" label="Nombre Completo" name="name" />
+              </div>
+              <div className="md:w-1/2">
+                <Input variant="standard" size="lg" label="Dirección de Correo Electrónico" name="_replyto" />
+              </div>
             </div>
             <Textarea variant="standard" size="lg" label="Mensaje" rows={8} name="message" />
             <Button variant="gradient" size="lg" className="mt-8" type="submit">

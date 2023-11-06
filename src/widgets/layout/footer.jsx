@@ -118,15 +118,11 @@ Footer.defaultProps = {
     {
       name: "Enlaces útiles",
       items: [
-        { name: "About Us", path: "" },
-        { name: "Blog", path: "" },
+        { name: "Acerca de Nosotros", path: "http://www.ucv.ve/" },
+        { name: "Blog", path: "https://leaizetucv.wordpress.com" },
         {
           name: "Github",
-          path: "",
-        },
-        {
-          name: "Free Products",
-          path: "",
+          path: "https://github.com/eduardob999",
         },
       ],
     },
@@ -134,20 +130,16 @@ Footer.defaultProps = {
       name: "Otros recursos",
       items: [
         {
-          name: "MIT License",
-          path: "",
+          name: "Facultad de Ciencias",
+          path: "http://www.ciens.ucv.ve/",
         },
         {
-          name: "Contribute",
-          path: "",
+          name: "Servicio Comunitario",
+          path: "http://www.ciens.ucv.ve/ciens/servicio-comunitario/",
         },
         {
-          name: "Change Log",
-          path: "",
-        },
-        {
-          name: "Contact Us",
-          path: "",
+          name: "Contactanos",
+          path: "https://leaizetucv.wordpress.com",
         },
       ],
     },
@@ -156,7 +148,7 @@ Footer.defaultProps = {
     <>
       Copyright © {year + ' '}
       <a
-        href=""
+        href="https://github.com/eduardob999"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
