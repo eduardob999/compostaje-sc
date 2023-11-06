@@ -16,7 +16,7 @@ import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData, videoData } from "@/data";
 import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
-export function SignUp() {
+export function Vid1() {
   const ref = useRef(null)
   const ref0 = useRef(null)
 
@@ -46,10 +46,10 @@ export function SignUp() {
       />
       <div className="absolute top-0 h-full w-full bg-black/75 bg-cover bg-center" />
       <div className="absolute inset-0 z-0 h-full w-full bg-black/50" />
-      <section className="h-screen px-10 pt-10 pb-40 overflow-y-auto">
+      <section className="h-screen pt-10 pb-40 overflow-y-auto">
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
-            <motion.div className="pt-40 ml-auto mr-auto w-full px-4 text-center lg:w-8/12"
+            <motion.div className="pt-40 ml-auto mr-auto w-full text-center lg:w-8/12"
               ref={ref}
               variants={{
                 hidden: { opacity: 0, x: 100 },
@@ -61,52 +61,21 @@ export function SignUp() {
               transition={{ duration: 0.5 }}
             >
               <Typography
-                variant="h1"
+                variant="h2"
                 color="white"
                 className="mb-6 font-black"
               >
-                Compostaje 101<br />
+                ¡Hagamos compost!<br />
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                ¿Eres nuevo en el mundo del compostaje? En esta sección,
-                te guiamos a través de los conceptos básicos del compostaje
-                mediante entretenidos videos.
+                I hope you enjoy it 🤗 I know my pronuntiation is not the best, so here you have all what I said in the chemical reactions.<br />
               </Typography>
+              <div className="videoWrapper">
+                <iframe 
+                  src="https://www.youtube.com/embed/T4diFCgNelI?si=0fPmwJNwbLEugWcR"></iframe>
+              </div>
             </motion.div>
           </div>
-        </div>
-        <div className="container mx-auto">
-          <motion.div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4"
-            ref={ref0}
-            variants={{
-              hidden: { opacity: 0, x: -100 },
-              visible: { opacity: 1, x: 0 }
-            }}
-            initial="hidden"
-            animate={mainControls0}
-            exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-          >
-            {teamData.map(({ img, name, position, socials }) => (
-              <a href="/compostaje-sc/compostaje-101/vid-1">
-                <TeamCard
-                  key={name}
-                  img={img}
-                  name={name}
-                  position={position}
-                  socials={
-                    <div className="flex items-center gap-2">
-                      {socials.map(({ color, name }) => (
-                        <IconButton key={name} color={color} variant="text">
-                          <i className={`fa-brands text-lg fa-${name}`} />
-                        </IconButton>
-                      ))}
-                    </div>
-                  }
-                />
-              </a>
-            ))}
-          </motion.div>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-b from-transparent to-black pointer-events-none" />
         <div className="absolute top-0 left-0 w-full h-60 bg-gradient-to-t from-transparent to-black pointer-events-none" />
@@ -118,4 +87,4 @@ export function SignUp() {
   );
 }
 
-export default SignUp;
+export default Vid1;

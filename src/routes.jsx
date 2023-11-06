@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp, Compostaje101 } from "@/pages";
+import { Home, Profile, SignIn, SignUp, Compostaje101, Vid1 } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
@@ -20,7 +20,14 @@ export const routes = [
     name: "Compostaje 101",
     path: "/compostaje-sc/compostaje-101",
     element: <SignUp />,
+  },
+  {
+    path: "/compostaje-sc/compostaje-101/vid-1",
+    element: <Vid1 />,
   }
+];
+
+export const hiddenRoutes = [
 ];
 
 export default routes;

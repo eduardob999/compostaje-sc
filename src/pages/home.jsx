@@ -20,15 +20,19 @@ export function Home() {
   const ref0 = useRef(null)
   const ref1 = useRef(null)
   const ref2 = useRef(null)
+  const ref3 = useRef(null)
+
   const isInView = useInView(ref, { once: true })
   const isInView0 = useInView(ref0, { once: true })
   const isInView1 = useInView(ref1, { once: true })
   const isInView2 = useInView(ref2, { once: true })
+  const isInView3 = useInView(ref3, { once: true })
 
   const mainControls = useAnimation()
   const mainControls0 = useAnimation()
   const mainControls1 = useAnimation()
   const mainControls2 = useAnimation()
+  const mainControls3 = useAnimation()
 
   useEffect(() => {
     if (isInView) {
@@ -53,6 +57,12 @@ export function Home() {
       mainControls2.start("visible")
     }
   }, [isInView2])
+
+  useEffect(() => {
+    if (isInView3) {
+      mainControls3.start("visible")
+    }
+  }, [isInView3])
 
   return (
     <>
@@ -153,13 +163,13 @@ export function Home() {
             </motion.div>
             <motion.div
               className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0"
-              ref={ref1}
+              ref={ref3}
               variants={{
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 }
               }}
               initial="hidden"
-              animate={mainControls1}
+              animate={mainControls3}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
             >
